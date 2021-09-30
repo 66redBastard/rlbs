@@ -1,0 +1,10 @@
+.wrapper {
+  background-color: var(--bg-main);
+}
+.container {
+  max-width: 1128px;
+  &--layout {
+    margin-top: 50px;
+    box-shadow: 0px 10px 30px -6px rgba(3, 73, 113, 0.1);
+  }
+}

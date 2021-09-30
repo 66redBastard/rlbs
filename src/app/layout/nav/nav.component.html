@@ -1,0 +1,21 @@
+<div class="container-nav">
+    <div class="container-nav--top">
+        <h2>Your Refferals</h2>
+        <div class="search-group">
+            <input type="text" class="search-control" placeholder="Search">
+            <div>
+                <button class="button button--search" type="button">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container-nav--bottom">
+        <nav class="filter">
+            <button *ngFor="let button of buttons; let i=index"
+                class="button button--nav-filter"
+                [class.active-filter]="selectedItem == i"
+                (click)="selectedItem=i">{{button}}</button>
+        </nav>
+        <button class="button button--submit">Submit Refferal</button>
+    </div>
+</div>

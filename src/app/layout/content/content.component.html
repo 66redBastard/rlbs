@@ -1,0 +1,40 @@
+<div class="container-content">
+    <div class="row-top">
+        <div class="column">
+            <button class="button button--back"><span
+                    class="triangle-back"></span>Back
+                to Dashboard</button>
+        </div>
+        <div class="column">
+            <h3>TST0000422</h3>
+        </div>
+    </div>
+    <div class="row-center">
+        <div class="column column--left">
+            <h4>Patient GP Information</h4>
+            <table class="table-info" width="50%" cellspacing="0">
+                <tbody>
+                    <tr *ngFor="let text of gpInfo">
+                        <td class="table-headline" style="font-weight:900">
+                            {{text.name}}</td>
+                        <td [class.error]="">
+                            {{text.content}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="column column--right">
+            <h4>Referral Status History</h4>
+            <table class="table-info" width="50%" cellspacing="0">
+                <tbody>
+                    <tr *ngFor="let text of gpInfo">
+                        <td class="table-headline" style="font-weight:900">
+                            {{text.name}}</td>
+                        <td [class.error]="">
+                            {{text.content}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
