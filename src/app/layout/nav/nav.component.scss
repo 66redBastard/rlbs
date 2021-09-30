@@ -1,0 +1,10 @@
+.container-nav {
+  background: var(--bg-nav);
+  padding: 25px 30px;
+
+  h2 {
+    font-weight: var(--bold);
+    font-size: var(--font-size-h2-desktop);
+    text-transform: uppercase;
+  }
+}
