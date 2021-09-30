@@ -4,4 +4,31 @@
     height: 39px;
     background: url("../../assets/images/icon-bell.svg");
   }
+  &--search {
+    width: 15px;
+    height: 15px;
+    margin-left: -27px;
+    background: url("../../assets/images/icon-search.png") no-repeat center
+      center;
+    background-size: contain;
+  }
+  &--nav-filter {
+    font: var(--bold);
+    margin-right: 25px;
+    padding: 2px 5px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  &--submit {
+    color: var(--white);
+    padding: 8px 25px;
+    border-radius: 25px;
+    background-color: var(--blue-dark);
+  }
+}
+.active-filter {
+  border-radius: 4px;
+  color: var(--white);
+  background-color: var(--nav-btn-active);
 }
