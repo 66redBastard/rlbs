@@ -26,6 +26,40 @@
     border-radius: 25px;
     background-color: var(--blue-dark);
   }
+  &--back {
+    padding: 8px 25px;
+    border-radius: 25px;
+    color: var(--blue-dark);
+    border: 1px solid var(--blue-dark);
+    background-color: var(--white);
+
+    .triangle-back {
+      position: relative;
+      overflow: hidden;
+      width: 11px;
+      height: 14px;
+      padding-left: 20px;
+      &::after {
+        content: "";
+        background: #ffffff;
+        display: block;
+        position: absolute;
+        width: 11px;
+        height: 14px;
+        top: 2px;
+        left: 0;
+        right: 0;
+        background: url("../../assets/images/Rectangle.svg") no-repeat center
+          center;
+        background-size: contain;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+      }
+    }
+  }
 }
 .active-filter {
   border-radius: 4px;

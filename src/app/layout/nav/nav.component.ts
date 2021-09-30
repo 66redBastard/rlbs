@@ -14,7 +14,7 @@ export class NavComponent implements OnInit {
     'Discharged',
     'Archived',
   ];
-  selectedItem: number = 0;
+  selectedItem: number = 3;
   // buttons = [
   //   {name:'In Triage', active: false},
   //   {name:'Completed', active: false},

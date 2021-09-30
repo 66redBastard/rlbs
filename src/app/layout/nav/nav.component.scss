@@ -1,6 +1,8 @@
 .container-nav {
   padding: 25px 30px;
-  background: var(--bg-nav);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: var(--bg-nav);
   &--top {
     display: flex;
     justify-content: space-between;
